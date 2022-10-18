@@ -9,7 +9,7 @@ body {
 a {
     text-decoration: none;
     color:black;
-    font-family: Roboto, sans-serif;
+    font-family: Secular One, sans-serif;
 }
 
 #menu {
@@ -224,6 +224,17 @@ p > img{
     color:#329CB5;
 }
 
+#language {
+    position:fixed;
+    right: 1em; bottom: 0px;
+    font-family: Secular One;
+    font-weight: bold;
+    font-size:1em;
+}
+
+#language a{
+    color:#337CB2;
+}
 @media screen and (max-width : 715px) {
     #menu {
         flex-direction: column;
