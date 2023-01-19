@@ -29,7 +29,7 @@ a {
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 25;
+    font-size: 20;
     font-weight: bold;
     font-family: 'Calibri';
 }
@@ -45,6 +45,7 @@ a {
     justify-content: center;
     overflow: auto;
     align-items: stretch;
+    flex-direction: row;
     border-left-width: 55px;
     border-left-style: solid;
     border-left-color: #555555;
@@ -60,7 +61,7 @@ a {
     margin: 3;
     word-wrap: break-word;
     padding-left: 1em;
-    font-size: 25;
+    font-size: 20;
     padding-bottom: 1em;
 }
 
@@ -68,7 +69,7 @@ a {
     font-family: Roboto, sans-serif;
     text-align: left;
     word-wrap: break-word;
-    font-size: 25;
+    font-size: 20;
     margin-left:1em;
     margin-right:1em;
 }
@@ -77,7 +78,7 @@ a {
     margin-left:1.5em;
     text-align: left;
     word-wrap: break-word;
-    font-size: 22;
+    font-size: 15;
 }
 
 .myPDF {
@@ -130,12 +131,32 @@ a {
 #spokenlanguages {
     display:flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 #spokenlanguages img{
     width: 150px;
     height: 100px;
     margin: 1em;
+}
+
+#spoken_labels{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#spoken_paragraph{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    font-family: Secular One;
+    font-size: 1.25em;
+    width:50%;
 }
 
 #imgPres {
@@ -147,13 +168,17 @@ a {
 #nameTitle {
     display: block;
     font-family: Secular One;
-    font-size: 2.5em;
+    font-size: 2em;
+}
+
+#nameTitle > a {
+    color:#337CB2;
 }
 
 #nameSub, #persoTitle {
     display: block;
     font-family: Secular One;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .proj {
